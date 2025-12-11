@@ -24,19 +24,12 @@ initial begin
 $monitor(" |  a=%b  |  b=%b  |  cin=%b  |  sum=%b  |  cout=%b  |  time=%0t    ",a,b,cin,sum,cout,$time);
 $dumpfile("adder_4bit vcd");
 $dumpvars();
-
-a=4'b0000;   b=4'b0001;   cin=0; 
-#10
-a=4'b1100;   b=4'b0011;   cin=1;
-#10
-a=4'b0110;   b=4'b0111;   cin=0;
-#10
-a=4'b1001;   b=4'b1111;   cin=1;
-#10
-a=4'b0011;   b=4'b1001;   cin=0;
-#10
-a=4'b1111;   b=4'b0110;   cin=1;
-#10
+a=4'b0000;   b=4'b0001;   cin=0;#10
+a=4'b1100;   b=4'b0011;   cin=1;#10
+a=4'b0110;   b=4'b0111;   cin=0;#10
+a=4'b1001;   b=4'b1111;   cin=1;#10
+a=4'b0011;   b=4'b1001;   cin=0;#10
+a=4'b1111;   b=4'b0110;   cin=1;#10
 $finish;
 end
 endmodule
