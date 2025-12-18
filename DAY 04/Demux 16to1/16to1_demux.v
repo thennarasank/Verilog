@@ -22,9 +22,7 @@ $monitor(" | a=%b | s=%b | out=%b |  time=%0t  | ",a,s,out,$time);
 $dumpfile("demux_16to1.vcd");
 $dumpvars();
 repeat (20)begin
-	a=1;
-	s=$random;
-	#10;
+a=1; s=$random; #10;
 end
 $finish;
 end
