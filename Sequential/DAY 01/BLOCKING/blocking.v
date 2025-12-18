@@ -11,6 +11,7 @@ a = b;
 c = 1;
 end
 endmodule
+//TEST BENCH
 module tb_blocking;
 wire a, b, c;
 //DUT 
