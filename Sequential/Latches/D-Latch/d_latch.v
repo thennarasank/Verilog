@@ -1,10 +1,3 @@
-//design
-module d_latch(input d, enable, output reg q);
-always@(d or enable)begin
-if(enable)
-q=d;
-end
-endmodule
 //testbench
 module tb_d_latch;
 reg d;
