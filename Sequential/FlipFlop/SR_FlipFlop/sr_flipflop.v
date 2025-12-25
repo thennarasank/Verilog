@@ -1,15 +1,3 @@
-//design
-// SR Flip-Flop (Positive edge triggered)
-module sr_flipflop(input clk,input s,input r,output reg q);
-always @(posedge clk) begin
-case ({s, r})
-2'b00: q <= q;     
-2'b01: q <= 1'b0;  
-2'b10: q <= 1'b1;   
-2'b11: q <= 1'bx;
-endcase
-end
-endmodule
 //testbench
 module tb_sr_flipflop;
 reg clk;
