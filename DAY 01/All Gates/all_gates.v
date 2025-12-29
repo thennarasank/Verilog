@@ -18,15 +18,10 @@ initial begin
 		a,b,and_y,or_y,nand_y,nor_y,exor_y,exnor_y,$time);
 	$dumpfile("all_gates.vcd");
 	$dumpvars();
-
-	a=0; b=0;
-	#10;
-	a=0; b=1;
-	#10;
-	a=1; b=0;
-	#10;
-	a=1; b=1;
-	#10;
+    a=0; b=0;#10;
+	a=0; b=1;#10;
+	a=1; b=0;#10;
+	a=1; b=1;#10;
 	$finish;
 end
 endmodule
