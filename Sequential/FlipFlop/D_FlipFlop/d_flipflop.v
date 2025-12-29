@@ -1,9 +1,3 @@
-//design 
-module d_flipflop( input wire clk, input wire d, output reg q );
-always @(posedge clk)begin
-q <= d;
-end 
-endmodule
 //testbench
 module tb_d_flipflop;
 reg clk;
