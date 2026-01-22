@@ -19,7 +19,7 @@ serial_in = 0;#10;
 $finish;
 end
 initial begin
-$monitor("Time=%0t | reset=%b | serial_in=%b | serial_out=%b",$time, reset, serial_in, serial_out);
+  $monitor(" reset=%b | serial_in=%b | serial_out=%b | time=%0t ", reset, serial_in, serial_out,$time );
 end
 endmodule
 
