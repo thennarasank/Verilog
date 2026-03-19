@@ -3,7 +3,6 @@ reg a;
 reg [3:0]b;
 wire sum;
 wire [3:0] out;
-//dut
  scalar_vector dut(a,b,sum,out);
  initial begin
 	 a = 1;
